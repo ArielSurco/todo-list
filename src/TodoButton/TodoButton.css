@@ -1,0 +1,39 @@
+.todo-button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--main-bg-color);
+  border-color: transparent;
+}
+
+.todo-button--add {
+  padding: 20px 40px;
+  border-radius: 12px;
+  background-color: var(--state-selected-color);
+  box-shadow: 0 2px 6px rgba(127, 177, 243, 0.4);
+}
+
+.todo-button--delete {
+  padding: 12px 26px;
+  border-radius: 4px;
+  background-color: var(--bg-delete-button-color);
+}
+
+.todo-button__trash {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 2px;
+  background-image: url("../icons/trash.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.todo-search {
+  width: 476px;
+  height: 56px;
+  padding: 20px 0 20px 12px;
+  border: 1px solid var(--states-border-color);
+  border-radius: 12px;
+}

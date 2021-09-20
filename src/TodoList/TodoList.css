@@ -1,0 +1,35 @@
+.todo-list {
+  width: 615px;
+  list-style: none;
+}
+
+.todo-list__todo-item {
+  position: relative;
+  margin-bottom: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.todo-list__todo-item.completed {
+  text-decoration: line-through;
+}
+
+.todo-list__todo-item input {
+  margin-left: 5px;
+  margin-right: 12px;
+  transform: scale(1.85);
+}
+
+.todo-item__trash {
+  display: inline-block;
+  width: 20px;
+  height: 21px;
+  position: absolute;
+  right: 0;
+  background-image: url("../icons/removeTodo.svg");
+}
+
+.todo-item__trash:hover {
+  cursor: pointer;
+}

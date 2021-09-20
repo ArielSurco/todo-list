@@ -1,0 +1,49 @@
+.states-list {
+  display: flex;
+  width: calc(217px * var(--cant-states));
+  height: 53px;
+  margin: 0 auto;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  list-style: none;
+}
+
+.states-list:after {
+  content: "";
+  width: 608px;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--states-border-color);
+}
+
+.states-list__state,
+.states-list__state--selected {
+  width: 89px;
+  text-align: center;
+}
+
+.states-list__state:hover,
+.states-list__state--selected:hover {
+  cursor: pointer;
+}
+
+.states-list__state--selected {
+  position: relative;
+}
+
+.states-list__state--selected:after {
+  content: "";
+  width: 89px;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -17px;
+  border-radius: 4px 4px 0 0;
+  background-color: var(--state-selected-color);
+  z-index: 1;
+}

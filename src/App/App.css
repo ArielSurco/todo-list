@@ -1,0 +1,47 @@
+.main .states-list {
+  margin-bottom: 18px;
+}
+
+.TODOS {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TODOS .todo-button:hover {
+  cursor: pointer;
+}
+
+.TODOS .todo-button--add {
+  margin-left: 25px;
+}
+
+.TODOS .todo-button--delete {
+  position: relative;
+  left: 250px;
+}
+
+.search-items {
+  margin-bottom: 30px;
+}
+
+.footer {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.footer__copyright {
+  color: var(--copyright-text-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.footer__copyright--username {
+  font-weight: 700;
+  text-decoration: underline;
+}
